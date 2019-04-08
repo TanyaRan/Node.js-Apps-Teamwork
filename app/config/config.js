@@ -1,5 +1,6 @@
-const PORT = 3003;
-const connectionString = 'mongodb://localhost/forfourwagon';
-const secret = 'tralalalabalalaika';
+const PORT = 3001;
+const MONGO_URI =
+  'mongodb://tanya1:tanya123@ds233596.mlab.com:33596/dream-rest';
+const SECRET = 'tralalalabalalaika';
 
-module.exports = { PORT, connectionString, secret };
+module.exports = { PORT, MONGO_URI, SECRET };

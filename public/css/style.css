@@ -3,7 +3,7 @@ html {
 }
 
 .wrapall {
-    margin-top: -50px;
+    margin-top: -30px;
     padding-top: 30px;
     padding-bottom: 30px;
     height: 100%;
@@ -301,7 +301,7 @@ html {
 
 
 /* user profile */
-.custom-table{
+.custom-table {
     color: black;
     font-size: 15px;
 }
@@ -512,17 +512,21 @@ html {
     .intro-message {
         padding-bottom: 15%;
     }
+
     .intro-message>h1 {
         font-size: 3em;
     }
+
     ul.intro-social-buttons>li {
         display: block;
         margin-bottom: 20px;
         padding: 10px;
     }
+
     ul.intro-social-buttons>li:last-child {
         margin-bottom: 0;
     }
+
     .intro-divider {
         width: 100%;
     }
@@ -531,14 +535,14 @@ html {
 .redbtn {
     background-color: red;
     color: white;
-    width:100%;
+    width: 100%;
     font-size: 18px;
 }
 
 .greenbtn {
     background-color: green;
     color: white;
-    width:100%;
+    width: 100%;
     font-size: 18px;
 }
 

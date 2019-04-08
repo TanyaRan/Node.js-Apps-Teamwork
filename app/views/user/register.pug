@@ -1,58 +1,40 @@
 extend ../_shared/_master
 
 block body
-    .wrapall
-        if (message && message.length > 0)
-            div.flash-message-red
-                | #{message}
-        form(id="register-form" class="form-vertical" action='/register' method="POST")
-            fieldset
-                div(id="legend")
-                    legend
-                        | Register
-                div(class="control-group")
-                    label(class="control-label" for="username")
-                        | Username
-                    div(class="controls")
-                        input(type="text" id="username" name="username" placeholder="" class="input-xlarge")
-                        p(class="help-block")
-                            | Username can contain any letters or numbers, without spaces
-                div(class="control-group")
-                    label(class="control-label" for="firstName")
-                        | First Name
-                    div(class="controls")
-                        input(type="text" id="firstName" name="firstName" placeholder="" class="input-xlarge")
-                        p(class="help-block")
-                            | Please enter your first Name
-                div(class="control-group")
-                    label(class="control-label" for="lastName")
-                        | Last Name
-                    div(class="controls")
-                        input(type="text" id="lastName" name="lastName" placeholder="" class="input-xlarge")
-                        p(class="help-block")
-                            | Please enter your last Name
-                div(class="control-group")
-                    label(class="control-label" for="phone")
-                        | Phone Number
-                    div(class="controls")
-                        input(type="text" id="phone" name="phone" placeholder="" class="input-xlarge")
-                        p(class="help-block")
-                            | Please enter your phone Number
-                div(class="control-group")
-                    label(class="control-label" for="email")
-                        | E-mail
-                    div(class="controls")
-                        input(type="text" id="email" name="email" placeholder="" class="input-xlarge")
-                        p(class="help-block")
-                            | Please provide your E-mail
-                div(class="control-group")
-                    label(class="control-label" for="password")
-                        | Password
-                    div(class="controls")
-                        input(type="password" id="password" name="password" placeholder="" class="input-xlarge")
-                        p(class="help-block")
-                            | Password should be at least 4 characters
-                div(class="control-group")
-                    div(class="controls")
-                        button(class="btn btn-success")
-                            | Register
+	.wrapall
+		if (message && message.length > 0)
+			div.flash-message-red
+				| #{message}
+		.card-container
+			form#register-form.form-vertical(action='/register' method="POST")
+				fieldset
+					div(id="legend")
+						legend
+							| Register
+					label.control-label(for="username")
+						| Username
+					input#username.form-control(type="text" name="username" placeholder="Username can contain any letters or numbers, without spaces")
+									
+					label.control-label(for="firstName")
+						| First Name
+					input#firstName.form-control(type="text" name="firstName" placeholder="Please enter your first Name")
+
+					label.control-label(for="lastName")
+						| Last Name
+					input#lastName.form-control(type="text" name="lastName" placeholder="Please enter your last Name")
+
+					label.control-label(for="phone")
+						| Phone Number
+					input#phone.form-control(type="text" name="phone" placeholder="Please enter your phone Number")
+
+					label.control-label(for="email")
+						| E-mail
+					input#email.form-control(type="text" name="email" placeholder="Please provide your E-mail")
+
+					label.control-label(for="password")
+						| Password
+					input#password.form-control(type="password" name="password" placeholder="Password should be at least 4 characters")
+
+					br
+					button.btn.btn-info.btn-block(type="submit")
+						| Регистрирай се
