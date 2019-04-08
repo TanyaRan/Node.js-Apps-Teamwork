@@ -1,6 +1,8 @@
-const PORT = 3001;
-const MONGO_URI =
-  'mongodb://tanya1:tanya123@ds233596.mlab.com:33596/dream-rest';
-const SECRET = 'tralalalabalalaika';
+/* eslint-disable no-undef */
+/* eslint-disable no-process-env */
 
-module.exports = { PORT, MONGO_URI, SECRET };
+module.exports = {
+  MONGO_URI: process.env.DB_URI,
+  PORT: 3001,
+  SECRET: process.env.SECRET,
+};

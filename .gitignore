@@ -57,7 +57,7 @@ typings/
 
 # dotenv environment variables file
 .env
-app/config/config.js
+app/config/dev.js
 =======
 # Compiled Object files
 *.slo
