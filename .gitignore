@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -7,8 +6,10 @@ yarn-debug.log*
 yarn-error.log*
 yarn.lock
 testem.log
-package-lock.json
 /typings
+
+package-lock.json
+yarn.lock
 
 # Runtime data
 pids
@@ -70,7 +71,7 @@ app/config/dev.js
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
-=======
+
 # Compiled Object files
 *.slo
 *.lo
@@ -109,4 +110,3 @@ obj/
 node_modules/
 bower_components/
 npm-debug*.log
->>>>>>> e8d078f72e35182dc35cc68ea7c49e73697cc66e
